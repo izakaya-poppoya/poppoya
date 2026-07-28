@@ -162,7 +162,7 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 .google-map { width: 100%; min-height: 500px; flex: 1; border: 0; }
 
 .reservation { padding: 7rem 1.5rem; text-align: center; color: white; background: var(--red-dark); }
-.reservation h2 { margin-bottom: 1rem; }
+.reservation h2 { margin-bottom: 1rem; font-size: clamp(1.8rem, 4vw, 2.8rem); }
 .reservation-phone { display: inline-flex; flex-direction: column; margin: 1rem 0; text-decoration: none; font-size: clamp(2.2rem, 7vw, 4.8rem); font-weight: 900; letter-spacing: .04em; line-height: 1.2; }
 .reservation-phone small { margin-bottom: .35rem; color: #efc48e; font-size: .75rem; letter-spacing: .2em; }
 .reservation-hours { color: rgba(255,255,255,.7); font-size: .84rem; }
@@ -234,6 +234,7 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
   .dish-card, .dish-card.featured { flex: 0 0 82vw; grid-column: auto; scroll-snap-align: start; }
   .dish-card.featured img, .dish-card img { height: 245px; }
   .menu-hint { color: #75604e; }
+  .menu-section { padding-bottom: 2.75rem; }
   .menu-group { padding: 0; overflow: hidden; }
   .menu-group h3 {
     position: relative;
@@ -255,6 +256,8 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
   .menu-group ul { display: none; padding: 0 1.35rem 1.25rem; }
   .menu-group.is-open ul { display: flex; }
   .menu-group li { font-size: .88rem; }
+  .space-copy { padding: 3rem 1.25rem 4rem; }
+  .space-copy .section-heading { margin-bottom: 1.5rem; }
   .space-facts { gap: .8rem; }
   .space-facts div { flex: 1; padding-left: .6rem; }
   .space-photos { min-height: 520px; }
@@ -276,25 +279,4 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
-}
-
-/* PCではスマホ用の文字を隠す */
-.sp-title,
-.sp-about-title {
-  display: none;
-}
-
-/* スマホ表示 */
-@media (max-width: 620px) {
-  /* PC用を隠す */
-  .pc-title,
-  .pc-about-title {
-    display: none;
-  }
-
-  /* スマホ用を表示 */
-  .sp-title,
-  .sp-about-title {
-    display: block;
-  }
 }
