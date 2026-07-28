@@ -256,7 +256,7 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
   .menu-group ul { display: none; padding: 0 1.35rem 1.25rem; }
   .menu-group.is-open ul { display: flex; }
   .menu-group li { font-size: .88rem; }
-  .space-copy { padding: 3rem 1.25rem 4rem; }
+  .space-copy { padding: 5rem 1.25rem 4rem; }
   .space-copy .section-heading { margin-bottom: 1.5rem; }
   .space-facts { gap: .8rem; }
   .space-facts div { flex: 1; padding-left: .6rem; }
