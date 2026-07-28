@@ -90,6 +90,7 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 .section-heading { max-width: 760px; margin-bottom: 3rem; }
 .section-heading h2 { margin-bottom: 1rem; }
 .section-heading > p:last-child { color: #6f6259; }
+.desktop-break { display: none; }
 .mobile-hint { display: none; }
 .about-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(3rem, 7vw, 7rem); align-items: center; }
 .about-copy > p { color: #594d45; font-size: 1.02rem; }
@@ -142,7 +143,6 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 .space-photos img { width: 100%; height: 100%; min-height: 0; object-fit: cover; background: #564338; }
 .karaoke-photo { position: relative; min-height: 0; overflow: hidden; }
 .karaoke-photo img { position: absolute; inset: 0; }
-.karaoke-photo span { position: absolute; right: 1rem; bottom: 1rem; padding: .65rem 1rem; color: white; border-radius: 999px; background: var(--red); font-weight: 900; box-shadow: 0 6px 20px rgba(0,0,0,.28); }
 
 .takeout { padding: 4.5rem max(1.5rem, calc((100vw - 1180px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 3rem; background: #ffd66d; }
 .takeout h2 { margin-bottom: .7rem; font-size: clamp(2rem, 4vw, 3rem); }
@@ -155,7 +155,6 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 .info-card dl div { display: grid; grid-template-columns: 120px 1fr; padding: 1rem 0; border-top: 1px solid var(--line); }
 .info-card dt { color: #7b6a5f; font-size: .84rem; font-weight: 700; }
 .info-card dd { margin: 0; }
-.review-note { margin-top: 1.7rem; padding: 1rem; color: #6f4d2d; background: #fff5dc; border-left: 3px solid #d99c39; font-size: .8rem; }
 .map-card { display: flex; min-height: 590px; flex-direction: column; background: #e7d8bf; }
 .map-heading { padding: 1.4rem 1.6rem; display: flex; align-items: center; gap: 1rem; }
 .map-heading span { color: var(--red); font-weight: 900; letter-spacing: .2em; }
@@ -176,6 +175,10 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 
 @media (hover: hover) and (min-width: 901px) {
   .site-nav a:hover { transform: scale(1.1); }
+}
+
+@media (min-width: 901px) {
+  .desktop-break { display: block; }
 }
 
 .fallback-label { position: absolute; inset: 0; display: grid; place-items: center; padding: 1rem; color: rgba(255,255,255,.8); font-family: "Zen Maru Gothic", sans-serif; text-align: center; letter-spacing: .08em; pointer-events: none; }
