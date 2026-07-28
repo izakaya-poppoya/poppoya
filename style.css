@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap");
 
 :root {
   --ink: #292019;
@@ -73,6 +73,7 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(31,17,9,.78) 0%, rgba(31,17,9,.38) 48%, rgba(31,17,9,.08) 100%), linear-gradient(0deg, rgba(20,12,8,.58), transparent 45%); }
 .hero-content { position: relative; z-index: 2; width: min(1180px, calc(100% - 3rem)); margin: 4rem auto 0; }
 .eyebrow { color: var(--red); font-size: .76rem; font-weight: 900; letter-spacing: .24em; text-transform: uppercase; }
+.script-label { font-family: "Damion", cursive; font-size: 1.55rem; font-weight: 400; letter-spacing: .04em; line-height: 1.2; text-transform: none; }
 .hero .eyebrow, .light .eyebrow, .space-copy .eyebrow, .reservation .eyebrow { color: #ffd15c; }
 .hero h1 { margin: .8rem 0 1.5rem; font-size: clamp(3.7rem, 10vw, 7.2rem); line-height: 1.15; letter-spacing: .03em; text-shadow: 3px 4px 0 rgba(95,31,18,.85), 0 8px 28px rgba(0,0,0,.35); }
 .hero h1 span { white-space: nowrap; }
