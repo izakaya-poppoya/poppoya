@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="沖縄市海邦の居酒屋 歩っぽや。新鮮な海鮮、沖縄料理、宴会・個室。駐車場17台、テイクアウト対応。"
+    />
+    <meta name="theme-color" content="#211913" />
+    <title>居酒屋 歩っぽや｜沖縄市海邦の海鮮居酒屋</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="居酒屋 歩っぽや ホーム">
+        <span class="brand-small">居酒屋</span>
+        <span class="brand-name">歩っぽや</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">メニューを開く</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="ページ内メニュー">
+        <a href="#about">歩っぽやについて</a>
+        <a href="#recommend">おすすめ</a>
+        <a href="#menu">お品書き</a>
+        <a href="#space">店内・宴会</a>
+        <a href="#access">店舗情報</a>
+      </nav>
+      <a class="header-call" href="tel:0989893124">電話予約</a>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <img
+          class="hero-photo"
+          src="assets/hero.jpg"
+          alt="歩っぽや自慢の新鮮な海鮮料理"
+          data-fallback="歩っぽやの料理写真をここに表示します"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">沖縄市海邦・マンタ公園すぐ隣</p>
+          <h1>今夜も、<br />みんなで乾杯！</h1>
+          <p class="hero-copy">
+            新鮮な魚と、うまい料理。<br />
+            家族も仲間も、歩っぽやに集合！
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="tel:0989893124">098-989-3124</a>
+            <a class="button button-secondary" href="#menu">お品書きを見る</a>
+          </div>
+        </div>
+        <div class="quick-info" aria-label="店舗の主な情報">
+          <span>17:00〜24:00</span>
+          <span>定休日なし</span>
+          <span>駐車場17台</span>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-heading">
+          <p class="eyebrow">ABOUT POPPOYA</p>
+          <h2>地元のみんなが、気軽に集まれる店。</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              居酒屋 歩っぽやは、沖縄市海邦にある海鮮居酒屋です。
+              生け簀から取り出す新鮮な魚をはじめ、寿司、刺身、沖縄料理、
+              炭火焼など幅広い料理をご用意しています。
+            </p>
+            <p>
+              仕事帰りの一杯から、家族でのお食事、模合や大人数の宴会まで。
+              「今日は歩っぽや行こう！」と、気軽にお立ち寄りください。
+            </p>
+            <div class="features">
+              <article><strong>活魚・海鮮</strong><span>生け簀の魚を新鮮なまま</span></article>
+              <article><strong>個室・宴会</strong><span>グループでのお集まりに</span></article>
+              <article><strong>沖縄料理</strong><span>地元の味も豊富にご用意</span></article>
+            </div>
+          </div>
+          <figure class="photo-frame tall">
+            <img
+              src="assets/interior.jpg"
+              alt="木のぬくもりを感じる歩っぽやの店内"
+              loading="lazy"
+              data-fallback="店内写真"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="recommend" class="section recommend">
+        <div class="section-heading light">
+          <p class="eyebrow">RECOMMEND</p>
+          <h2>歩っぽやのおすすめ</h2>
+          <p>お刺身も、名物料理も。テーブルいっぱいに並べてどうぞ！</p>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card featured">
+            <img src="assets/sashimi.jpg" alt="新鮮な刺身盛り" loading="lazy" data-fallback="刺身盛り" />
+            <div><span>海のごちそう</span><h3>新鮮な刺身盛り</h3><p>その日の鮮魚を彩りよく盛り合わせます。</p></div>
+          </article>
+          <article class="dish-card">
+            <img src="assets/miso-pizza.jpg" alt="歩っぽや名物のみそピザ" loading="lazy" data-fallback="みそピザ" />
+            <div><span>歩っぽや名物</span><h3>ぽっぽのみそピザ</h3></div>
+          </article>
+          <article class="dish-card">
+            <img src="assets/ton-soku.jpg" alt="豚足の唐揚げ" loading="lazy" data-fallback="豚足の唐揚げ" />
+            <div><span>外はカリッと</span><h3>豚足の唐揚げ</h3></div>
+          </article>
+          <article class="dish-card">
+            <img src="assets/uni-yaki.jpg" alt="海鮮ウニソース焼き" loading="lazy" data-fallback="海鮮ウニソース焼き" />
+            <div><span>濃厚な味わい</span><h3>海鮮ウニソース焼き</h3></div>
+          </article>
+        </div>
+        <p class="note light-note">※仕入れ状況により内容が変わる場合があります。</p>
+      </section>
+
+      <section id="menu" class="section menu-section">
+        <div class="section-heading">
+          <p class="eyebrow">MENU</p>
+          <h2>お品書き</h2>
+          <p>定番から沖縄らしい一品まで、豊富に取り揃えています。</p>
+        </div>
+        <div class="text-menu">
+          <article class="menu-group">
+            <h3>お刺身</h3>
+            <ul>
+              <li>刺身 松（7種）</li><li>刺身 竹（5種）</li><li>刺身 梅（3種）</li>
+              <li>刺身単品</li><li>馬刺し</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>お寿司</h3>
+            <ul>
+              <li>にぎり 松（12種）</li><li>にぎり 竹（9種）</li><li>にぎり 梅（6種）</li>
+              <li>レインボーロール寿司</li><li>かっぱ巻き</li><li>鉄火巻き</li>
+              <li>納豆しそ巻き</li><li>山イモ梅巻き</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>とりあえず</h3>
+            <ul>
+              <li>梅水晶</li><li>黒豆えだまめ</li><li>山いもザクザク</li><li>うめきゅう</li>
+              <li>たらチャンジャ</li><li>レモンスライス</li><li>トマトスライス</li>
+              <li>きゅうり一本漬</li><li>ホタルイカ沖漬け</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>沖縄料理</h3>
+            <ul>
+              <li>とうふチャンプルー</li><li>そーめんチャンプルー</li><li>ふーチャンプルー</li>
+              <li>ふーチキナーチャンプルー</li><li>じーまーみー豆腐</li>
+              <li>じーまーみーの揚げだし</li><li>もずく天ぷら</li>
+              <li>ひらやーちー</li><li>あぐー餃子</li><li>豚足の唐揚げ</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>一品料理</h3>
+            <ul>
+              <li>海鮮酢みそ和え</li><li>海鮮キムチ和え</li><li>まぐろ山かけ</li>
+              <li>とり天チリマヨ</li><li>あさり酒蒸し</li><li>シイラにんにくバター</li>
+              <li>だし巻きたまご</li><li>アスパラバター</li><li>エビマヨ</li>
+              <li>牛すじ煮込み豆腐</li><li>チーズ盛り合わせ</li><li>牛ステーキ</li>
+              <li>むきエビのガーリック炒め</li><li>海鮮ウニソース焼き</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>揚げもの</h3>
+            <ul>
+              <li>ポテトフライ</li><li>イカ下足唐揚げ</li><li>厚あげ豆腐</li>
+              <li>なんこつ唐あげ</li><li>鶏の唐あげ</li><li>とり皮パリパリ</li>
+              <li>カキフライ</li><li>にんにく丸あげ</li><li>カマンベールチーズフライ</li>
+              <li>手羽の甘辛あげ</li><li>メカジキの天ぷら</li><li>ちくわチーズ磯辺あげ</li>
+              <li>キスの天ぷら</li><li>豚足の唐揚げ</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>串焼き・炭火焼</h3>
+            <ul>
+              <li>串盛り合わせ（五本）</li><li>もも</li><li>ハツ</li><li>砂肝</li>
+              <li>つくね</li><li>ねぎ</li><li>鶏白レバー</li><li>豚バラ</li>
+              <li>やきとりわさび</li><li>ねぎま</li><li>ぼんじり</li><li>トマベー</li><li>うずベー</li>
+              <li>エイヒレ炙り</li><li>牛ハラミおろしポン酢</li><li>縞ホッケ</li><li>中落ちカルビ</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>ご飯もの</h3>
+            <ul>
+              <li>チャーハン（たまご・にんにく・キムチ）</li>
+              <li>おむすび（しゃけ・梅・みそ・明太子）</li>
+              <li>お茶漬け（しゃけ・梅・明太子・わさび）</li>
+              <li>とり雑炊</li><li>キムチ雑炊</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>サラダ</h3>
+            <ul>
+              <li>海鮮サラダ</li><li>生ハムシーザーサラダ</li>
+              <li>オニオンサラダ</li><li>海鮮生春巻きサラダ</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>ピザ・パスタ</h3>
+            <ul>
+              <li>ぽっぽのみそピザ</li><li>トマトソースピザ</li>
+              <li>トマトパスタ</li><li>明太子クリームパスタ</li><li>ペペロンチーノ</li>
+            </ul>
+          </article>
+          <article class="menu-group">
+            <h3>デザート</h3>
+            <ul>
+              <li>バニラアイス</li><li>チョコアイス</li>
+              <li>雪見だいふく</li><li>フレンチトースト（バニラアイス添え）</li>
+            </ul>
+          </article>
+        </div>
+        <p class="note">
+          ※メニュー内容は仕入れ状況や季節によって変更になる場合があります。詳しい内容・価格は店内メニューをご確認ください。
+        </p>
+      </section>
+
+      <section id="space" class="section space-section">
+        <div class="space-copy">
+          <div class="section-heading light">
+            <p class="eyebrow">SPACE &amp; PARTY</p>
+          <h2>笑って、食べて、<br />にぎやかに。</h2>
+          </div>
+          <p>
+            カウンター、座敷、個室をご用意しています。
+            模合や宴会、カラオケを楽しむお集まりもお気軽にご相談ください。
+          </p>
+          <dl class="space-facts">
+            <div><dt>席数</dt><dd>70席</dd></div>
+            <div><dt>個室</dt><dd>あり</dd></div>
+            <div><dt>駐車場</dt><dd>17台</dd></div>
+          </dl>
+          <p class="note light-note">※個室の利用人数・カラオケ利用条件はご予約時にご確認ください。</p>
+        </div>
+        <div class="space-photos">
+          <img src="assets/counter.jpg" alt="歩っぽやのカウンター席" loading="lazy" data-fallback="カウンター席" />
+          <img src="assets/karaoke-room.jpg" alt="宴会にも使えるカラオケルーム" loading="lazy" data-fallback="カラオケルーム" />
+        </div>
+      </section>
+
+      <section class="takeout">
+        <div>
+          <p class="eyebrow">TAKE OUT</p>
+          <h2>お持ち帰りもできます。</h2>
+          <p>晩ごはんや、ご家族・仲間のお集まりにも。内容と受け取り時間はお電話でご相談ください。</p>
+        </div>
+        <a class="button button-primary" href="tel:0989893124">電話で問い合わせる</a>
+      </section>
+
+      <section id="access" class="section access">
+        <div class="section-heading">
+          <p class="eyebrow">INFORMATION</p>
+          <h2>店舗情報</h2>
+        </div>
+        <div class="access-grid">
+          <div class="info-card">
+            <h3>居酒屋 歩っぽや</h3>
+            <dl>
+              <div><dt>住所</dt><dd>〒904-2162<br />沖縄県沖縄市海邦2-21-24</dd></div>
+              <div><dt>電話</dt><dd><a href="tel:0989893124">098-989-3124</a></dd></div>
+              <div><dt>営業時間</dt><dd>17:00〜24:00<br /><small>ラストオーダー 23:00</small></dd></div>
+              <div><dt>定休日</dt><dd>なし</dd></div>
+              <div><dt>駐車場</dt><dd>17台</dd></div>
+              <div><dt>お支払い</dt><dd>クレジットカード・PayPayなどのQR決済</dd></div>
+              <div><dt>喫煙</dt><dd>店内禁煙・屋外に喫煙所あり</dd></div>
+              <div><dt>その他</dt><dd>テイクアウト可</dd></div>
+            </dl>
+            <p class="review-note">
+              確認のお願い：営業時間・ラストオーダー・カードの対応ブランドは、公開前に店舗で最終確認してください。
+            </p>
+          </div>
+          <div class="map-card">
+            <div class="map-visual">
+              <span>MAP</span>
+              <strong>マンタ公園すぐ隣</strong>
+              <p>沖縄市海邦2-21-24</p>
+            </div>
+            <a
+              class="button button-dark"
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%85%E9%85%92%E5%B1%8B%20%E6%AD%A9%E3%81%A3%E3%81%BD%E3%82%84"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Googleマップで見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation">
+        <p class="eyebrow">RESERVATION</p>
+        <h2>ご予約・お問い合わせ</h2>
+        <p>お席、個室、宴会、テイクアウトのご相談はお電話で承ります。</p>
+        <a class="reservation-phone" href="tel:0989893124"><small>お電話はこちら</small>098-989-3124</a>
+        <p class="reservation-hours">受付時間の目安 17:00〜24:00</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/poppoya3124/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://page.line.me/zyq0996v" target="_blank" rel="noopener noreferrer">LINE公式</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top"><span class="brand-small">居酒屋</span><span class="brand-name">歩っぽや</span></a>
+      <p>沖縄県沖縄市海邦2-21-24</p>
+      <p><small>© <span id="year"></span> IZAKAYA POPPOYA</small></p>
+    </footer>
+
+    <a class="mobile-call" href="tel:0989893124">電話で予約する</a>
+  </body>
+</html>
