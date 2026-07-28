@@ -277,3 +277,24 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* PCではスマホ用の文字を隠す */
+.sp-title,
+.sp-about-title {
+  display: none;
+}
+
+/* スマホ表示 */
+@media (max-width: 620px) {
+  /* PC用を隠す */
+  .pc-title,
+  .pc-about-title {
+    display: none;
+  }
+
+  /* スマホ用を表示 */
+  .sp-title,
+  .sp-about-title {
+    display: block;
+  }
+}
