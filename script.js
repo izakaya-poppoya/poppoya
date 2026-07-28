@@ -66,7 +66,11 @@ menuGroups.forEach((group) => {
   });
 });
 
-mobileMenuQuery.addEventListener("change", updateMenuGroupState);
+if (mobileMenuQuery.addEventListener) {
+  mobileMenuQuery.addEventListener("change", updateMenuGroupState);
+} else {
+  mobileMenuQuery.addListener(updateMenuGroupState);
+}
 updateMenuGroupState();
 
 document.getElementById("year").textContent = new Date().getFullYear();

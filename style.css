@@ -75,6 +75,7 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 .eyebrow { color: var(--red); font-size: .76rem; font-weight: 900; letter-spacing: .24em; text-transform: uppercase; }
 .hero .eyebrow, .light .eyebrow, .space-copy .eyebrow, .reservation .eyebrow { color: #ffd15c; }
 .hero h1 { margin: .8rem 0 1.5rem; font-size: clamp(3.7rem, 10vw, 7.2rem); line-height: 1.15; letter-spacing: .03em; text-shadow: 3px 4px 0 rgba(95,31,18,.85), 0 8px 28px rgba(0,0,0,.35); }
+.hero h1 span { white-space: nowrap; }
 .hero-copy { font-size: clamp(1rem, 2vw, 1.25rem); letter-spacing: .08em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2.3rem; }
 .button { display: inline-flex; min-height: 54px; align-items: center; justify-content: center; padding: .8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 800; transition: transform .2s, background .2s; }
@@ -90,7 +91,6 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
 .section-heading { max-width: 760px; margin-bottom: 3rem; }
 .section-heading h2 { margin-bottom: 1rem; }
 .section-heading > p:last-child { color: #6f6259; }
-.desktop-break { display: none; }
 .mobile-hint { display: none; }
 .about-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(3rem, 7vw, 7rem); align-items: center; }
 .about-copy > p { color: #594d45; font-size: 1.02rem; }
@@ -177,10 +177,6 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
   .site-nav a:hover { transform: scale(1.1); }
 }
 
-@media (min-width: 901px) {
-  .desktop-break { display: block; }
-}
-
 .fallback-label { position: absolute; inset: 0; display: grid; place-items: center; padding: 1rem; color: rgba(255,255,255,.8); font-family: "Zen Maru Gothic", sans-serif; text-align: center; letter-spacing: .08em; pointer-events: none; }
 .dish-card, .photo-frame, .space-photos { position: relative; }
 
@@ -213,7 +209,8 @@ h2 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; letter-spacing: .04
   .hero { min-height: 680px; }
   .hero-content { width: calc(100% - 2rem); }
   .hero h1 { font-size: clamp(3.1rem, 17vw, 4.6rem); }
-  .hero-title-last { display: block; }
+  .hero h1 span { display: block; }
+  .hero h1 br { display: none; }
   .hero-actions .button { width: 100%; }
   .quick-info { left: 0; right: 0; }
   .quick-info span { flex: 1; padding: .85rem .4rem; text-align: center; font-size: .68rem; }
