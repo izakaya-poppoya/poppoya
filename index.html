@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="沖縄市海邦の居酒屋 歩っぽや。新鮮な海鮮、沖縄料理、宴会・個室。駐車場17台、テイクアウト対応。"
+      content="沖縄市海邦の居酒屋 歩っぽや。新鮮な海鮮、沖縄料理、宴会・個室・カラオケルーム。駐車場あり、テイクアウト対応。"
     />
     <meta name="theme-color" content="#211913" />
     <title>居酒屋 歩っぽや｜沖縄市海邦の海鮮居酒屋</title>
@@ -45,7 +45,7 @@
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">沖縄市海邦・マンタ公園すぐ隣</p>
-          <h1>今夜も、<br />みんなで乾杯！</h1>
+          <h1><span>今夜も</span><br /><span>みんなで</span><span class="hero-title-last">乾杯！</span></h1>
           <p class="hero-copy">
             新鮮な魚と、うまい料理。<br />
             家族も仲間も、歩っぽやに集合！
@@ -58,7 +58,7 @@
         <div class="quick-info" aria-label="店舗の主な情報">
           <span>17:00〜24:00</span>
           <span>定休日なし</span>
-          <span>駐車場17台</span>
+          <span>駐車場あり</span>
         </div>
       </section>
 
@@ -101,6 +101,7 @@
           <h2>歩っぽやのおすすめ</h2>
           <p>お刺身も、名物料理も。テーブルいっぱいに並べてどうぞ！</p>
         </div>
+        <p class="mobile-hint recommend-hint">横にスワイプして見られます →</p>
         <div class="dish-grid">
           <article class="dish-card featured">
             <img src="assets/sashimi.jpg" alt="新鮮な刺身盛り" loading="lazy" data-fallback="刺身盛り" />
@@ -128,6 +129,7 @@
           <h2>お品書き</h2>
           <p>定番から沖縄らしい一品まで、豊富に取り揃えています。</p>
         </div>
+        <p class="mobile-hint menu-hint">カテゴリーを押すと料理名が開きます。</p>
         <div class="text-menu">
           <article class="menu-group">
             <h3>お刺身</h3>
@@ -236,16 +238,23 @@
             カウンター、座敷、個室をご用意しています。
             模合や宴会、カラオケを楽しむお集まりもお気軽にご相談ください。
           </p>
+          <div class="karaoke-callout">
+            <strong>カラオケルームあります！</strong>
+            <span>お食事とカラオケを一緒に楽しめます。模合や二次会にもどうぞ。</span>
+          </div>
           <dl class="space-facts">
             <div><dt>席数</dt><dd>70席</dd></div>
             <div><dt>個室</dt><dd>あり</dd></div>
-            <div><dt>駐車場</dt><dd>17台</dd></div>
+            <div><dt>駐車場</dt><dd>あり</dd></div>
           </dl>
           <p class="note light-note">※個室の利用人数・カラオケ利用条件はご予約時にご確認ください。</p>
         </div>
         <div class="space-photos">
           <img src="assets/counter.jpg" alt="歩っぽやのカウンター席" loading="lazy" data-fallback="カウンター席" />
-          <img src="assets/karaoke-room.jpg" alt="宴会にも使えるカラオケルーム" loading="lazy" data-fallback="カラオケルーム" />
+          <div class="karaoke-photo">
+            <img src="assets/karaoke-room.jpg" alt="宴会にも使える歩っぽやのカラオケルーム" loading="lazy" data-fallback="カラオケルーム" />
+            <span>カラオケルームあります！</span>
+          </div>
         </div>
       </section>
 
@@ -271,25 +280,28 @@
               <div><dt>電話</dt><dd><a href="tel:0989893124">098-989-3124</a></dd></div>
               <div><dt>営業時間</dt><dd>17:00〜24:00<br /><small>ラストオーダー 23:00</small></dd></div>
               <div><dt>定休日</dt><dd>なし</dd></div>
-              <div><dt>駐車場</dt><dd>17台</dd></div>
-              <div><dt>お支払い</dt><dd>クレジットカード・PayPayなどのQR決済</dd></div>
+              <div><dt>駐車場</dt><dd>あり</dd></div>
+              <div><dt>お支払い</dt><dd>クレジットカード・QR決済OK！</dd></div>
               <div><dt>喫煙</dt><dd>店内禁煙・屋外に喫煙所あり</dd></div>
               <div><dt>その他</dt><dd>テイクアウト可</dd></div>
             </dl>
-
+            <p class="review-note">
+              確認のお願い：営業時間・ラストオーダー・カードの対応ブランドは、公開前に店舗で最終確認してください。
+            </p>
           </div>
           <div class="map-card">
-            <div class="map-visual">
+            <div class="map-heading">
               <span>MAP</span>
               <strong>マンタ公園すぐ隣</strong>
-              <p>沖縄市海邦2-21-24</p>
             </div>
-            <a
-              class="button button-dark"
-              href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%85%E9%85%92%E5%B1%8B%20%E6%AD%A9%E3%81%A3%E3%81%BD%E3%82%84"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Googleマップで見る</a>
+            <iframe
+              class="google-map"
+              title="居酒屋 歩っぽや 周辺地図"
+              src="https://www.google.com/maps?q=%E5%B1%85%E9%85%92%E5%B1%8B%20%E6%AD%A9%E3%81%A3%E3%81%BD%E3%82%84%2C%20%E6%B2%96%E7%B8%84%E7%9C%8C%E6%B2%96%E7%B8%84%E5%B8%82%E6%B5%B7%E9%82%A62-21-24&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
